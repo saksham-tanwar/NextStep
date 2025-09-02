@@ -1,0 +1,304 @@
+{
+  "questions": [
+    {
+      "text": "Which of these school subjects do you find most engaging?",
+      "options": {
+        "A": "Physics or Chemistry, due to their logical rules and experiments (Science)",
+        "B": "History, Literature, or Fine Arts, for their creative and social insights (Arts & Humanities)",
+        "C": "Business Studies or Economics, for understanding financial systems (Commerce)",
+        "D": "Computer Science, because you enjoy coding and building applications (Computers)",
+        "E": "Workshop classes or vocational training for practical, hands-on skills (Vocational)"
+      }
+    },
+    {
+      "text": "When facing a complex problem, what is your first instinct?",
+      "options": {
+        "A": "Break it down and analyze it systematically (Science)",
+        "B": "Consider its human impact and brainstorm creative or ethical solutions (Arts & Humanities)",
+        "C": "Assess the risks and potential return on investment (Commerce)",
+        "D": "Write a script or algorithm to automate a solution (Computers)",
+        "E": "Start building or tinkering with a practical prototype (Vocational)"
+      }
+    },
+    {
+      "text": "What role do you naturally play in a group project?",
+      "options": {
+        "A": "The researcher who gathers and verifies data (Science)",
+        "B": "The communicator and designer who shapes the narrative and visuals (Arts & Humanities)",
+        "C": "The manager who sets deadlines and manages the budget (Commerce)",
+        "D": "The tech expert who handles the digital tools and software (Computers)",
+        "E": "The implementer who does the hands-on work to bring the idea to life (Vocational)"
+      }
+    },
+    {
+      "text": "What kind of work environment makes you feel most energized?",
+      "options": {
+        "A": "A laboratory or a research-focused institution (Science)",
+        "B": "A library, university, creative studio, or government office (Arts & Humanities)",
+        "C": "A fast-paced corporate office or a start-up (Commerce)",
+        "D": "A tech company with a focus on innovation and coding (Computers)",
+        "E": "A workshop, a kitchen, or an outdoor field (Vocational)"
+      }
+    },
+    {
+      "text": "What would you prefer to create?",
+      "options": {
+        "A": "A new scientific theory or a working experiment (Science)",
+        "B": "A well-argued essay, a social policy, or a piece of art (Arts & Humanities)",
+        "C": "A successful business plan or a profitable investment portfolio (Commerce)",
+        "D": "A useful software application or a complex website (Computers)",
+        "E": "A piece of furniture, a delicious meal, or a well-maintained garden (Vocational)"
+      }
+    },
+    {
+      "text": "How do you prefer to learn new things?",
+      "options": {
+        "A": "Through structured experiments and data analysis (Science)",
+        "B": "Through reading, debating, storytelling, and visual expression (Arts & Humanities)",
+        "C": "Through case studies, financial models, and market analysis (Commerce)",
+        "D": "Through coding tutorials, documentation, and building projects (Computers)",
+        "E": "Through hands-on practice, apprenticeship, and direct experience (Vocational)"
+      }
+    },
+    {
+      "text": "A global crisis occurs. What aspect of it interests you most?",
+      "options": {
+        "A": "The scientific data behind it and potential technological solutions (Science)",
+        "B": "The historical precedents and its impact on society and culture (Arts & Humanities)",
+        "C": "The effect on the global economy, supply chains, and markets (Commerce)",
+        "D": "The role of technology in communication and data tracking during the crisis (Computers)",
+        "E": "The immediate, practical needs of the community and how to help (Vocational)"
+      }
+    },
+    {
+      "text": "Which of these activities sounds like a perfect weekend?",
+      "options": {
+        "A": "Visiting a science museum or watching a documentary on space (Science)",
+        "B": "Visiting a historical site, art gallery, or attending a public debate (Arts & Humanities)",
+        "C": "Following the stock market or brainstorming a new business idea (Commerce)",
+        "D": "Participating in a hackathon or learning a new programming language (Computers)",
+        "E": "Working on a DIY project at home, cooking, or gardening (Vocational)"
+      }
+    },
+    {
+      "text": "What tool are you most comfortable using?",
+      "options": {
+        "A": "A microscope or a telescope (Science)",
+        "B": "A library card, a well-reasoned argument, or a paintbrush (Arts & Humanities)",
+        "C": "A spreadsheet or a business plan template (Commerce)",
+        "D": "A code editor or a command line interface (Computers)",
+        "E": "A hammer, a wrench, or a sewing machine (Vocational)"
+      }
+    },
+    {
+      "text": "What kind of impact do you want to have on the world?",
+      "options": {
+        "A": "To advance human knowledge and make new discoveries (Science)",
+        "B": "To create a more just, equitable, and culturally rich society (Arts & Humanities)",
+        "C": "To create wealth, jobs, and economic opportunities (Commerce)",
+        "D": "To build technology that solves real-world problems and connects people (Computers)",
+        "E": "To provide essential services and build tangible things for the community (Vocational)"
+      }
+    },
+    {
+      "text": "Which section of a bookstore do you naturally gravitate towards?",
+      "options": {
+        "A": "Science and Nature (Science)",
+        "B": "History, Politics, Fiction, or Art & Photography (Arts & Humanities)",
+        "C": "Business and Economics (Commerce)",
+        "D": "Computers and Technology (Computers)",
+        "E": "DIY, Crafts, or Home & Garden (Vocational)"
+      }
+    },
+    {
+      "text": "How do you define 'success'?",
+      "options": {
+        "A": "Publishing a groundbreaking research paper (Science)",
+        "B": "Winning a major legal case, influencing public policy, or creating acclaimed art (Arts & Humanities)",
+        "C": "Building a profitable company from the ground up (Commerce)",
+        "D": "Developing a widely used piece of software (Computers)",
+        "E": "Being recognized as a master of your craft or trade (Vocational)"
+      }
+    },
+    {
+      "text": "What's your favorite type of game to play?",
+      "options": {
+        "A": "Complex strategy games that require analytical thinking (Science)",
+        "B": "Role-playing games with rich stories, or debate and trivia clubs (Arts & Humanities)",
+        "C": "Monopoly or other economic simulation games (Commerce)",
+        "D": "Video games, especially programming or puzzle-based ones (Computers)",
+        "E": "Sports or games that require physical skill and coordination (Vocational)"
+      }
+    },
+    {
+      "text": "If you were to start a YouTube channel, what would it be about?",
+      "options": {
+        "A": "Explaining complex scientific concepts simply (Science)",
+        "B": "Analyzing political events, historical trends, or showcasing creative work (Arts & Humanities)",
+        "C": "Giving financial advice and reviewing businesses (Commerce)",
+        "D": "Live-coding sessions or tech gadget reviews (Computers)",
+        "E": "Tutorials on how to build, cook, or repair things (Vocational)"
+      }
+    },
+    {
+      "text": "When you read the news, which headlines catch your eye?",
+      "options": {
+        "A": "New breakthroughs in medicine or space exploration (Science)",
+        "B": "Updates on international relations, social justice, or film reviews (Arts & Humanities)",
+        "C": "The latest stock market trends and company mergers (Commerce)",
+        "D": "Launches of new apps or advancements in artificial intelligence (Computers)",
+        "E": "News about new construction projects or agricultural innovations (Vocational)"
+      }
+    },
+    {
+      "text": "What does 'innovation' mean to you?",
+      "options": {
+        "A": "Conducting novel research to push the boundaries of knowledge (Science)",
+        "B": "Developing new social theories or creating a new style of art (Arts & Humanities)",
+        "C": "Creating a disruptive business model that changes an industry (Commerce)",
+        "D": "Writing a new algorithm that solves a problem more efficiently (Computers)",
+        "E": "Inventing a new tool or technique that makes a task easier (Vocational)"
+      }
+    },
+    {
+      "text": "How do you prefer to organize information?",
+      "options": {
+        "A": "In logical charts, graphs, and data tables (Science)",
+        "B": "As a timeline, a structured essay, or a visual mind map (Arts & Humanities)",
+        "C": "In a budget, a business plan, or a balance sheet (Commerce)",
+        "D": "In a database, a structured data format like JSON, or a codebase (Computers)",
+        "E": "As a set of clear, step-by-step instructions or a checklist (Vocational)"
+      }
+    },
+    {
+      "text": "What do you find most satisfying?",
+      "options": {
+        "A": "Finally understanding a complex scientific theory (Science)",
+        "B": "Winning a debate or completing a piece of art that expresses your vision (Arts & Humanities)",
+        "C": "Closing a profitable deal or making a smart investment (Commerce)",
+        "D": "Fixing a difficult bug in a piece of code (Computers)",
+        "E": "Successfully repairing a broken object with your hands (Vocational)"
+      }
+    },
+    {
+      "text": "Which of these professionals do you admire the most?",
+      "options": {
+        "A": "A Nobel Prize-winning scientist like Marie Curie (Science)",
+        "B": "A transformative leader or a visionary artist (Arts & Humanities)",
+        "C": "A revolutionary entrepreneur like Steve Jobs (Commerce)",
+        "D": "A pioneering programmer like Ada Lovelace (Computers)",
+        "E": "A master craftsperson known for their exceptional skill (Vocational)"
+      }
+    },
+    {
+      "text": "If you had to teach a class, what subject would you choose?",
+      "options": {
+        "A": "Physics 101 (Science)",
+        "B": "Modern World History or Creative Writing (Arts & Humanities)",
+        "C": "Principles of Marketing (Commerce)",
+        "D": "Introduction to Python Programming (Computers)",
+        "E": "Basic Carpentry or Cooking (Vocational)"
+      }
+    },
+    {
+      "text": "What are you most curious about?",
+      "options": {
+        "A": "How the universe works at a quantum level (Science)",
+        "B": "Why civilizations rise and fall, or how art affects emotion (Arts & Humanities)",
+        "C": "What makes some businesses succeed while others fail (Commerce)",
+        "D": "How to build an artificial intelligence that can learn (Computers)",
+        "E": "How to build a self-sustaining home (Vocational)"
+      }
+    },
+    {
+      "text": "What kind of documentary would you choose to watch?",
+      "options": {
+        "A": "One about the natural world or a scientific discovery (Science)",
+        "B": "One about a major historical event or the life of a famous artist (Arts & Humanities)",
+        "C": "One about the rise and fall of a major corporation (Commerce)",
+        "D": "One about the history of the internet or hacking culture (Computers)",
+        "E": "One that follows a master craftsperson at work (Vocational)"
+      }
+    },
+    {
+      "text": "When you think about the future, what are you most excited about?",
+      "options": {
+        "A": "Future scientific breakthroughs and technological advancements (Science)",
+        "B": "The potential for positive social change and new forms of art (Arts & Humanities)",
+        "C": "New markets and opportunities for global business (Commerce)",
+        "D": "The evolution of AI and its integration into daily life (Computers)",
+        "E": "The development of new sustainable technologies and crafts (Vocational)"
+      }
+    },
+    {
+      "text": "What do you value most in a team member?",
+      "options": {
+        "A": "Their analytical ability and attention to detail (Science)",
+        "B": "Their empathy, communication skills, and creativity (Arts & Humanities)",
+        "C": "Their ambition and ability to execute a plan (Commerce)",
+        "D": "Their technical proficiency and problem-solving skills (Computers)",
+        "E": "Their reliability and practical, can-do attitude (Vocational)"
+      }
+    },
+    {
+      "text": "How do you view rules?",
+      "options": {
+        "A": "As natural laws to be discovered and understood (Science)",
+        "B": "As social constructs or creative conventions to be analyzed and challenged (Arts & Humanities)",
+        "C": "As regulations and frameworks necessary for a functioning market (Commerce)",
+        "D": "As algorithms and protocols that ensure a system works correctly (Computers)",
+        "E": "As safety guidelines and best practices for a good result (Vocational)"
+      }
+    },
+    {
+      "text": "If you received a large grant, how would you use it?",
+      "options": {
+        "A": "To fund a scientific research project (Science)",
+        "B": "To establish a non-profit for social change or produce an independent film (Arts & Humanities)",
+        "C": "To invest in a promising new business venture (Commerce)",
+        "D": "To start a tech company to build a new app (Computers)",
+        "E": "To open a community workshop or a training center (Vocational)"
+      }
+    },
+    {
+      "text": "When you look at a skyscraper, what do you think about?",
+      "options": {
+        "A": "The physics and engineering principles that keep it standing (Science)",
+        "B": "The social impact it has on the neighborhood and its aesthetic design (Arts & Humanities)",
+        "C": "The financial investment and real estate value of the property (Commerce)",
+        "D": "The smart technology and network infrastructure within the building (Computers)",
+        "E": "The immense amount of labor and materials required to build it (Vocational)"
+      }
+    },
+    {
+      "text": "Which task would you find least boring?",
+      "options": {
+        "A": "Spending hours meticulously analyzing a dataset (Science)",
+        "B": "Spending hours in an archive or practicing a creative skill (Arts & Humanities)",
+        "C": "Spending hours analyzing financial reports and market data (Commerce)",
+        "D": "Spending hours debugging a large and complex codebase (Computers)",
+        "E": "Spending hours carefully assembling a complicated piece of machinery (Vocational)"
+      }
+    },
+    {
+      "text": "What kind of puzzle do you enjoy most?",
+      "options": {
+        "A": "Logic puzzles or mathematical brain teasers (Science)",
+        "B": "Crossword puzzles, word games, or murder mysteries (Arts & Humanities)",
+        "C": "Strategy games focused on resource management (Commerce)",
+        "D": "Algorithmic challenges or code-breaking puzzles (Computers)",
+        "E": "Mechanical puzzles like a Rubik's Cube or a 3D jigsaw (Vocational)"
+      }
+    },
+    {
+      "text": "Your ideal vacation involves...",
+      "options": {
+        "A": "A trip to a natural wonder to observe its unique ecosystem (Science)",
+        "B": "Exploring ancient ruins or the world's great art museums (Arts & Humanities)",
+        "C": "Visiting a global financial hub like New York or Tokyo (Commerce)",
+        "D": "Attending a major tech conference or a coding bootcamp (Computers)",
+        "E": "A hands-on workshop to learn a new skill like pottery or cooking (Vocational)"
+      }
+    }
+  ]
+}

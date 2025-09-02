@@ -1,0 +1,77 @@
+{
+  "B.Sc. (Physics)": {
+    "Higher Studies": ["M.Sc. in Physics", "M.Tech in Instrumentation", "MCA", "MBA"],
+    "Government Jobs": ["Scientific Assistant in ISRO/DRDO", "UPSC Civil Services", "SSC CGL", "Patent Officer", "Meteorologist"],
+    "Private Sector": ["Data Analyst", "R&D Scientist", "Quantitative Analyst", "Technical Writer", "Patent Analyst"]
+  },
+  "B.Sc. (Chemistry)": {
+    "Higher Studies": ["M.Sc. in Chemistry", "M.Pharma", "MBA in Pharma Management", "PG Diploma in Petrochemicals"],
+    "Government Jobs": ["Chemist in ONGC/IOCL", "Food Safety Officer (FSSAI)", "Forensic Scientist", "UPSC Geoscientist"],
+    "Private Sector": ["Quality Control Chemist", "Pharmaceutical Sales", "R&D in Chemical Companies", "Food Technologist", "Cosmetic Chemist"]
+  },
+  "B.Sc. (Mathematics)": {
+    "Higher Studies": ["M.Sc. in Mathematics", "MCA", "M.Sc. in Data Science/Statistics", "Actuarial Science"],
+    "Government Jobs": ["Statistician in Govt. Depts.", "Banking (IBPS PO/Clerk)", "SSC CGL", "Operations Research Analyst"],
+    "Private Sector": ["Data Scientist", "Actuary", "Financial Analyst", "Market Researcher", "Software Developer", "Cryptographer"]
+  },
+  "B.Sc. (Biology/Zoology/Botany)": {
+    "Higher Studies": ["M.Sc. in Botany/Zoology/Biotechnology", "Masters in Environmental Science", "MBA in Healthcare Management"],
+    "Government Jobs": ["Forest Range Officer", "Scientist in Botanical/Zoological Survey of India", "UPSC IFS (Indian Forest Service)", "Wildlife Biologist"],
+    "Private Sector": ["Medical Representative", "Lab Technician", "Ecologist", "Content Writer (Medical)", "Horticulturist", "Genetic Counselor"]
+  },
+  "B.A. (General)": {
+    "Higher Studies": ["M.A. in a chosen subject", "Law (LLB)", "Masters in Journalism", "MBA", "B.Ed."],
+    "Government Jobs": ["UPSC Civil Services (IAS/IPS)", "State PSCs", "SSC CGL", "Bank PO"],
+    "Private Sector": ["Content Writer", "HR Executive", "Public Relations", "Sales and Marketing", "Customer Relationship Manager"]
+  },
+  "B.A. (History)": {
+    "Higher Studies": ["M.A. in History", "Masters in Archaeology", "Law (LLB)", "Masters in Museology"],
+    "Government Jobs": ["UPSC Civil Services", "Archaeological Survey of India (ASI)", "State PSCs", "Museum Curator", "Govt. Archivist"],
+    "Private Sector": ["Journalist", "Content Writer", "Teacher/Professor", "Policy Analyst", "Heritage Manager", "Tourism Expert"]
+  },
+  "B.A. (Political Science)": {
+    "Higher Studies": ["M.A. in Political Science", "Masters in International Relations", "Law (LLB)", "MBA in HR"],
+    "Government Jobs": ["UPSC Civil Services (IAS/IPS/IFS)", "State PSCs", "Intelligence Bureau (IB)", "Legislative Assistant"],
+    "Private Sector": ["Policy Analyst (Think Tanks)", "Journalist", "Public Relations Manager", "Political Campaign Manager", "CSR Manager"]
+  },
+  "B.Com.": {
+    "Higher Studies": ["M.Com.", "MBA (Finance)", "Chartered Accountancy (CA)", "Company Secretary (CS)"],
+    "Government Jobs": ["RBI Grade B Officer", "SEBI Grade A Officer", "Bank PO/Clerk (IBPS)", "Accountant in Govt. Depts.", "CAG Auditor"],
+    "Private Sector": ["Accountant", "Financial Analyst", "Tax Consultant", "Auditor", "Stockbroker", "Investment Banker"]
+  },
+  "BBA": {
+    "Higher Studies": ["MBA", "Post Graduate Diploma in Management (PGDM)", "Masters in Finance"],
+    "Government Jobs": ["Bank PO", "SSC CGL", "UPSC Civil Services", "Manager in PSUs"],
+    "Private Sector": ["Marketing Manager", "HR Manager", "Sales Executive", "Business Development Manager", "Entrepreneur", "Supply Chain Manager"]
+  },
+  "BCA": {
+    "Higher Studies": ["MCA", "M.Sc. in IT/Computer Science", "MBA in IT Management"],
+    "Government Jobs": ["IT Officer in Banks", "Scientist in NIC", "Cybersecurity Officer", "Govt. System Administrator"],
+    "Private Sector": ["Software Developer", "Web Developer", "System Analyst", "Database Administrator", "Technical Support Engineer"]
+  },
+  "B.E. / B.Tech (Computer Science)": {
+    "Higher Studies": ["M.Tech in CS", "MS from abroad", "MBA", "Ph.D."],
+    "Government Jobs": ["Scientist in ISRO/DRDO/NIC", "IT Officer in Banks/PSUs", "UPSC Civil Services (Technical)", "Cyber Forensics Expert"],
+    "Private Sector": ["Software Development Engineer (SDE)", "Data Scientist", "AI/ML Engineer", "Cybersecurity Analyst", "Product Manager"]
+  },
+  "B.E. / B.Tech (General Engineering)": {
+    "Higher Studies": ["M.Tech/M.E.", "M.S. from abroad", "MBA", "Ph.D."],
+    "Government Jobs": ["IES (Indian Engineering Services)", "Scientist (ISRO/DRDO)", "Engineer in PSUs (NTPC, BHEL)", "State Engineering Services"],
+    "Private Sector": ["Core Engineer (Mechanical, Civil, Electrical)", "Project Manager", "Consultant", "R&D Engineer", "Operations Manager"]
+  },
+  "B.A. LL.B.": {
+    "Higher Studies": ["LL.M.", "MBA", "Ph.D. in Law", "Diploma in Cyber Law"],
+    "Government Jobs": ["Judiciary (Judge)", "Public Prosecutor", "JAG (Judge Advocate General) in Army", "Legal Advisor to PSUs"],
+    "Private Sector": ["Corporate Lawyer", "Litigation Lawyer", "Legal Consultant", "Law Firm Associate", "Legal Journalist"]
+  },
+  "MBBS": {
+    "Higher Studies": ["MD/MS (Cardiology, Neurology, Surgery, etc.)", "Diploma in specialized fields"],
+    "Government Jobs": ["Doctor in Govt. Hospitals/PHCs", "UPSC (CMS - Combined Medical Services)", "Medical Officer in Army/Navy/Air Force"],
+    "Private Sector": ["Doctor in Private Hospitals", "Own Clinic/Practice", "Medical Researcher", "Medico-Legal Consultant", "Hospital Management"]
+  },
+  "B.Ed.": {
+    "Higher Studies": ["M.Ed.", "Ph.D. in Education", "Post-Graduate Diploma in School Leadership"],
+    "Government Jobs": ["Teacher in Government Schools (TGT/PGT)", "Education Officer", "Principal/Headmaster", "Block Education Officer"],
+    "Private Sector": ["Teacher in Private Schools", "Curriculum Developer", "EdTech Content Creator", "Education Consultant", "Academic Coordinator"]
+  }
+}
