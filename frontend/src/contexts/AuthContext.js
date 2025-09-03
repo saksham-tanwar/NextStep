@@ -26,24 +26,37 @@ export const AuthProvider = ({ children }) => {
   // Sign up with email/password
   const signup = async (email, password, name, district, classStream) => {
     try {
+      // Create auth user
       const { user } = await createUserWithEmailAndPassword(auth, email, password);
       await updateProfile(user, { displayName: name });
       
-      await createUserProfile(user.uid, {
-        name,
-        email,
-        district,
-        classStream
-      });
+      // Create user profile in Firestore
+      try {
+        await createUserProfile(user.uid, {
+          name,
+          email,
+          district,
+          classStream
+        });
+      } catch (dbError) {
+        console.error("Failed to create user profile:", dbError);
+        // Consider rolling back auth user creation if db fails
+        await user.delete();
+        throw dbError;
+      }
 
-      // Send welcome email
-      const userData = {
-        ...user,
-        displayName: name,
-        district,
-        classStream
-      };
-      await sendWelcomeEmail(userData);
+      // Send welcome email (non-blocking)
+      try {
+        const userData = {
+          ...user,
+          displayName: name,
+          district,
+          classStream
+        };
+        await sendWelcomeEmail(userData);
+      } catch (emailError) {
+        console.warn("Failed to send welcome email:", emailError);
+      }
       
       return user;
     } catch (error) {
@@ -64,21 +77,23 @@ export const AuthProvider = ({ children }) => {
       if (!result.user) return null;
 
       try {
-        const userDoc = await getUserProfile(result.uid);
-        
-        if (!userDoc) {
-          await createUserProfile(result.user.uid, {
-            name: result.user.displayName,
-            email: result.user.email,
-            district: '',
-            classStream: ''
-          });
+        // Always create/update user profile on Google sign-in
+        await createUserProfile(result.user.uid, {
+          name: result.user.displayName,
+          email: result.user.email,
+          district: '',
+          classStream: ''
+        });
 
-          // Send welcome email for new Google sign-ups
+        // Send welcome email for new Google sign-ups
+        try {
           await sendWelcomeEmail(result.user);
+        } catch (emailError) {
+          console.warn("Failed to send welcome email:", emailError);
         }
       } catch (dbError) {
-        console.warn("Failed to create/verify user document:", dbError);
+        console.error("Failed to create user document:", dbError);
+        throw dbError; // Propagate database errors
       }
       
       return result.user;
@@ -100,6 +115,7 @@ export const AuthProvider = ({ children }) => {
       
       const userUpdate = {
         name: displayName,
+        email: auth.currentUser.email,
         district,
         classStream
       };
@@ -114,10 +130,8 @@ export const AuthProvider = ({ children }) => {
         classStream
       };
       setUser(updatedUser);
-
-      // Send profile update email
-      await sendProfileUpdateEmail(updatedUser);
-
+      
+      return updatedUser;
     } catch (error) {
       console.error("Profile update error:", error);
       throw error;

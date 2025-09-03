@@ -28,7 +28,14 @@ export default function SignIn() {
       const creationTime = new Date(result.user.metadata.creationTime).getTime();
       const lastSignInTime = new Date(result.user.metadata.lastSignInTime).getTime();
       if (Math.abs(creationTime - lastSignInTime) < 1000) { // Within 1 second
-        await sendWelcomeEmail(result.user);
+        console.log('New user signed in:', result.user);
+        await sendWelcomeEmail({
+          email: result.user.email,
+          displayName: result.user.displayName,
+          // Add district and classStream if available in user data
+          district: result.user.district,
+          classStream: result.user.classStream
+        });
       }
       navigate('/profile');
     } catch (error) {
@@ -55,7 +62,13 @@ export default function SignIn() {
       const creationTime = new Date(result.metadata.creationTime).getTime();
       const lastSignInTime = new Date(result.metadata.lastSignInTime).getTime();
       if (Math.abs(creationTime - lastSignInTime) < 1000) { // Within 1 second
-        await sendWelcomeEmail(result);
+        await sendWelcomeEmail({
+          email: result.email,
+          displayName: result.displayName,
+          // Add district and classStream if available in user data
+          district: result.district,
+          classStream: result.classStream
+        });
       }
       if (result) {
         navigate('/profile');

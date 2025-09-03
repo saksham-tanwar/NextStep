@@ -1,61 +1,77 @@
-import { WelcomeTemplate } from '../components/Email/WelcomeTemplate';
-import { renderToString } from 'react-dom/server';
+import emailjs from '@emailjs/browser';
 
-const RESEND_API_KEY = process.env.REACT_APP_RESEND_API_KEY;
-const RESEND_API_URL = 'https://api.resend.com/emails';
+const EMAILJS_USER_ID = process.env.REACT_APP_EMAILJS_USER_ID;
+const EMAILJS_SERVICE_ID = process.env.REACT_APP_EMAILJS_SERVICE_ID;
 
-const sendEmail = async (to, subject, content) => {
+export const sendTestEmail = async ({ email }) => {
+  if (!email) return { success: false, error: 'Email is required' };
+  
   try {
-    const res = await fetch(RESEND_API_URL, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'Authorization': `Bearer ${RESEND_API_KEY}`,
+    const result = await emailjs.send(
+      EMAILJS_SERVICE_ID,
+      'template_nzntqys',
+      {
+        to_email: email,
+        message: 'This is a test email from NextStep',
       },
-      body: JSON.stringify({
-        from: 'NextStep <onboarding@resend.dev>',
-        to: [to],
-        subject: subject,
-        html: content,
-      }),
-    });
+      EMAILJS_USER_ID
+    );
 
-    if (!res.ok) {
-      const error = await res.text();
-      console.error('Failed to send email:', error);
-      return { success: false, error };
-    }
-
-    const data = await res.json();
-    return { success: true, data };
+    return { success: true, data: result };
   } catch (error) {
-    console.error('Error sending email:', error);
+    console.error('Error sending test email:', error);
     return { success: false, error };
   }
 };
 
-export const sendWelcomeEmail = async (user) => {
-  if (!user.email) return;
+export const sendWelcomeEmail = async ({ email, displayName, district, classStream }) => {
+  if (!email) return { success: false, error: 'Email is required' };
 
-  const welcomeTemplate = WelcomeTemplate({
-    name: user.displayName || 'Student',
-    district: user.district || '',
-    classStream: user.classStream || ''
-  });
+  console.log('Sending welcome email to:', email);
 
-  const htmlContent = renderToString(welcomeTemplate);
-  return sendEmail(user.email, 'Welcome to NextStep! Start Your Journey', htmlContent);
+  try {
+    const result = await emailjs.send(
+      EMAILJS_SERVICE_ID,
+      'template_pfdcw8e',
+      {
+        to_email: email,
+        to_name: displayName || 'Student',
+        district: district || '',
+        class_stream: classStream || ''
+      },
+      EMAILJS_USER_ID
+    );
+
+    return { success: true, data: result };
+  } catch (error) {
+    console.error('Error sending welcome email:', error);
+    return { success: false, error };
+  }
 };
 
-export const sendProfileUpdateEmail = async (user) => {
-  if (!user.email) return;
+export const sendProfileUpdateEmail = async ({ email, displayName, district, classStream }) => {
+  if (!email) return { success: false, error: 'Email is required' };
 
-  const updateTemplate = WelcomeTemplate({
-    name: user.displayName,
-    district: user.district,
-    classStream: user.classStream
-  });
+  try {
+    const result = await emailjs.send(
+      EMAILJS_SERVICE_ID,
+      'template_bmgsko2',
+      {
+        to_email: email,
+        to_name: displayName || '',
+        title: 'Profile Updated',
+        district: district || '',
+        class_stream: classStream || ''
+      },
+      EMAILJS_USER_ID
+    );
 
-  const htmlContent = renderToString(updateTemplate);
-  return sendEmail(user.email, 'NextStep Profile Updated', htmlContent);
+    return { success: true, data: result };
+  } catch (error) {
+    console.error('Error sending profile update email:', error);
+    return { success: false, error };
+  }
 };
+
+// Initialize EmailJS with your User ID
+emailjs.init(EMAILJS_USER_ID);

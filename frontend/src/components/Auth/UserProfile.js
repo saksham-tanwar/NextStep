@@ -1,15 +1,19 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../../contexts/AuthContext';
+import EmailTestForm from '../Email/EmailTestForm';
+import { sendTestEmail, sendProfileUpdateEmail } from '../../services/email';
 
 export default function UserProfile() {
   const { user, logout, updateUserProfile } = useAuth();
+  const [sendingEmail, setSendingEmail] = useState(false);
   const [name, setName] = useState(user?.displayName || '');
   const [district, setDistrict] = useState(user?.district || '');
   const [classStream, setClassStream] = useState(user?.classStream || '');
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
   const [message, setMessage] = useState('');
+  const [showEmailTest, setShowEmailTest] = useState(false);
   const navigate = useNavigate();
 
   const districts = ['Srinagar', 'Jammu', 'Anantnag', 'Baramulla', 'Budgam', 'Doda', 'Ganderbal', 'Kathua', 'Kishtwar', 'Kulgam'];
@@ -30,8 +34,21 @@ export default function UserProfile() {
     setLoading(true);
 
     try {
-      await updateUserProfile(name, district, classStream);
+      const updatedUser = await updateUserProfile(name, district, classStream);
       setMessage('Profile updated successfully!');
+      
+      // Send profile update email separately
+      try {
+        await sendProfileUpdateEmail({
+          email: user.email,
+          displayName: name,
+          district,
+          classStream
+        });
+      } catch (emailError) {
+        console.warn('Failed to send profile update email:', emailError);
+        // Don't show email error to user since profile update succeeded
+      }
     } catch (error) {
       setError(error.message);
     }
@@ -44,6 +61,22 @@ export default function UserProfile() {
       navigate('/signin');
     } catch (error) {
       setError(error.message);
+    }
+  };
+
+  const handleTestEmail = async () => {
+    try {
+      setSendingEmail(true);
+      const result = await sendTestEmail({ email: user.email });
+      if (result.success) {
+        setMessage('Test email sent successfully!');
+      } else {
+        setError('Failed to send test email');
+      }
+    } catch (error) {
+      setError(error.message);
+    } finally {
+      setSendingEmail(false);
     }
   };
 
@@ -131,7 +164,7 @@ export default function UserProfile() {
               </select>
             </div>
 
-            <div className="flex space-x-4">
+            <div className="flex space-x-3">
               <button
                 type="submit"
                 disabled={loading}
@@ -146,8 +179,29 @@ export default function UserProfile() {
               >
                 Sign Out
               </button>
+              <button
+                type="button"
+                onClick={handleTestEmail}
+                disabled={sendingEmail}
+                className="flex-1 py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 disabled:opacity-50"
+              >
+                {sendingEmail ? 'Sending...' : 'Test Email'}
+              </button>
+              <button
+                type="button"
+                onClick={() => setShowEmailTest(!showEmailTest)}
+                className="flex-1 py-2 px-4 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+              >
+                {showEmailTest ? 'Hide Email Test' : 'Show Email Test'}
+              </button>
             </div>
           </form>
+
+          {showEmailTest && (
+            <div className="mt-8">
+              <EmailTestForm />
+            </div>
+          )}
         </div>
       </div>
     </div>

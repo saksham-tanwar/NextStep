@@ -48,10 +48,22 @@ export const getUserProfile = async (userId) => {
 export const updateUserProfile = async (userId, data) => {
   try {
     const userRef = doc(db, userCollection, userId);
-    await updateDoc(userRef, {
-      ...data,
-      updatedAt: new Date().toISOString()
-    });
+    const userSnap = await getDoc(userRef);
+
+    if (!userSnap.exists()) {
+      // Create the document if it doesn't exist
+      await setDoc(userRef, {
+        ...data,
+        createdAt: new Date().toISOString(),
+        updatedAt: new Date().toISOString()
+      });
+    } else {
+      // Update existing document
+      await updateDoc(userRef, {
+        ...data,
+        updatedAt: new Date().toISOString()
+      });
+    }
     return true;
   } catch (error) {
     console.error('Error updating user profile:', error);
