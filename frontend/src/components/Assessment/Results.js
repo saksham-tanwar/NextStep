@@ -47,10 +47,10 @@ function Results({ scores }) {
     const maxScore = Math.max(...Object.values(scores));
 
     return (
-        <div className="results-container page-transition">
-            <div className="card shadow-sm mb-4">
+        <div className="results-container page-transition ">
+            <div className="card shadow-sm mt-16 mb-4">
                 <div className="card-body">
-                    <h2 className="card-title text-center mb-4 fade-in">Your Career Assessment Results</h2>
+                    <h2 className="card-title text-lg text-center mb-4 fade-in">Your Career Assessment Results</h2>
                     
                     {/* Score Bars */}
                     <div className="scores mb-5">
