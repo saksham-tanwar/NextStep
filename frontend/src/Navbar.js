@@ -1,39 +1,35 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+
 function Navbar() {
-    return (<nav class="navbar navbar-expand-lg sticky-top border-bottom " style={{ backgroundColor: "#FFF" }}>
-        <div class="container p-2">
-            <Link class="navbar-brand" to={"/"}><img src="media/images/logo.png" style={{ width: "25%" }} alt="" /></Link>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    return (
+        <nav className="bg-white shadow-md fixed top-0 left-0 w-full z-50">
+            <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-3">
 
-                <form class="d-flex" role="search">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <Link class="nav-link active" aria-current="page" to={"/Home"}>Home</Link>
-                        </li>
-                        <li class="nav-item">
-                            <Link class="nav-link active" aria-current="page" to={"./Signup"}>Signup</Link>
-                        </li>
+                {/* Logo */}
+                <Link to="/" className="flex items-center">
+                    <img src="media/images/logo.png" alt="logo" className="w-28" />
+                </Link>
 
-                        <li class="nav-item">
-                            <Link class="nav-link active" aria-current="page" to={"./Aptitude Test"}>AptitudeTest</Link>
-                        </li>
-                        <li class="nav-item">
-                            <Link class="nav-link active" aria-current="page" to={"./Colleges"}>Colleges</Link>
-                        </li>
-                        <li class="nav-item">
-                            <Link class="nav-link active" aria-current="page" to={"./support"} >Support</Link>
-                        </li>
+                {/* Navigation Links */}
+                <ul className="hidden md:flex gap-6 text-gray-700 font-medium">
+                    <li><Link to="/" className="hover:text-indigo-600">Home</Link></li>
+                    <li><Link to="/Signup" className="hover:text-indigo-600">Signup</Link></li>
+                    <li><Link to="/AptitudeTest" className="hover:text-indigo-600">Aptitude Test</Link></li>
+                    <li>
+                        <Link to="/Colleges" className="hover:text-indigo-600">Colleges</Link>
+                    </li>
 
-                    </ul>
+                    <li><Link to="/Support" className="hover:text-indigo-600">Support</Link></li>
+                </ul>
 
-                </form>
+
+                <button className="md:hidden flex items-center px-3 py-2 border rounded text-gray-600 border-gray-400 hover:text-indigo-600">
+                    ☰
+                </button>
             </div>
-        </div>
-    </nav>);
+        </nav>
+    );
 }
 
 export default Navbar;

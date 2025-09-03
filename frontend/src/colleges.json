@@ -1,0 +1,446 @@
+{
+  "colleges": [
+    {
+      "name": "Central University of Jammu",
+      "address": "Rahya-Suchani (Bagla), Samba, Jammu and Kashmir 181143",
+      "district": "Samba",
+      "degree_programs": {
+        "undergraduate": ["B.Sc.", "B.A.", "B.Com.", "Four-Year UG Programme (FYUGP)"],
+        "postgraduate": ["M.Sc.", "M.A.", "MBA", "Ph.D."]
+      },
+      "cut_offs_eligibility": "Merit-based via CUET for UG; Ph.D. via entrance test; specific cut-offs vary annually",
+      "medium_of_instruction": "English",
+      "facilities": {
+        "hostel": true,
+        "labs": true,
+        "library": true,
+        "internet_access": true
+      }
+    },
+    {
+      "name": "Government College of Education, Jammu",
+      "address": "Canal Road, Jammu, Jammu and Kashmir 180001",
+      "district": "Jammu",
+      "degree_programs": {
+        "undergraduate": ["B.Ed."],
+        "postgraduate": ["M.Ed."]
+      },
+      "cut_offs_eligibility": "Merit-based; minimum 50% in bachelor’s degree for B.Ed.; M.Ed. via entrance test",
+      "medium_of_instruction": "English",
+      "facilities": {
+        "hostel": true,
+        "labs": true,
+        "library": true,
+        "internet_access": true
+      }
+    },
+    {
+      "name": "GGM Science College",
+      "address": "Canal Road, Jammu, Jammu and Kashmir 180001",
+      "district": "Jammu",
+      "degree_programs": {
+        "undergraduate": ["B.Sc. (Physics, Chemistry, Mathematics, Biology)"],
+        "postgraduate": []
+      },
+      "cut_offs_eligibility": "Merit-based via CUET; minimum 50% in Class 12",
+      "medium_of_instruction": "English",
+      "facilities": {
+        "hostel": true,
+        "labs": true,
+        "library": true,
+        "internet_access": true
+      }
+    },
+    {
+      "name": "Government College for Women, Gandhi Nagar",
+      "address": "Gandhi Nagar, Jammu, Jammu and Kashmir 180004",
+      "district": "Jammu",
+      "degree_programs": {
+        "undergraduate": ["B.Sc. (Medical, Non-Medical)", "B.Sc. Home Science", "B.A."],
+        "postgraduate": []
+      },
+      "cut_offs_eligibility": "Merit-based via CUET; minimum 50% in Class 12",
+      "medium_of_instruction": "English",
+      "facilities": {
+        "hostel": true,
+        "labs": true,
+        "library": true,
+        "internet_access": true
+      }
+    },
+    {
+      "name": "MAM College",
+      "address": "Dr. Ambedkar Road, Jammu, Jammu and Kashmir 180006",
+      "district": "Jammu",
+      "degree_programs": {
+        "undergraduate": ["B.A.", "B.Sc."],
+        "postgraduate": []
+      },
+      "cut_offs_eligibility": "Merit-based via CUET; minimum 50% in Class 12",
+      "medium_of_instruction": "English",
+      "facilities": {
+        "hostel": true,
+        "labs": true,
+        "library": true,
+        "internet_access": true
+      }
+    },
+    {
+      "name": "SPMR College of Commerce",
+      "address": "Canal Road, Jammu, Jammu and Kashmir 180001",
+      "district": "Jammu",
+      "degree_programs": {
+        "undergraduate": ["B.Com.", "BBA"],
+        "postgraduate": []
+      },
+      "cut_offs_eligibility": "Merit-based via CUET; minimum 50% in Class 12",
+      "medium_of_instruction": "English",
+      "facilities": {
+        "hostel": true,
+        "labs": true,
+        "library": true,
+        "internet_access": true
+      }
+    },
+    {
+      "name": "University of Jammu",
+      "address": "Baba Saheb Ambedkar Road, Jammu, Jammu and Kashmir 180006",
+      "district": "Jammu",
+      "degree_programs": {
+        "undergraduate": ["B.A.", "B.Sc.", "B.Com.", "BBA", "B.A. LL.B.", "Four-Year UG Programme (FYUGP)"],
+        "postgraduate": ["M.A.", "M.Sc.", "M.Com.", "MBA", "MCA", "Master of Rural Studies", "Ph.D."]
+      },
+      "cut_offs_eligibility": "Merit-based via CUET for UG; PG via entrance test; specific cut-offs vary (e.g., MBA requires high merit)",
+      "medium_of_instruction": "English",
+      "facilities": {
+        "hostel": true,
+        "labs": true,
+        "library": true,
+        "internet_access": true
+      }
+    },
+    {
+      "name": "Government College of Engineering and Technology, Jammu",
+      "address": "Chak Bhalwal, Jammu, Jammu and Kashmir 181122",
+      "district": "Jammu",
+      "degree_programs": {
+        "undergraduate": ["B.E. (Engineering)"],
+        "postgraduate": ["M.Tech."]
+      },
+      "cut_offs_eligibility": "Merit-based via JKBOPEE counseling; minimum 50% in Class 12 with PCM",
+      "medium_of_instruction": "English",
+      "facilities": {
+        "hostel": true,
+        "labs": true,
+        "library": true,
+        "internet_access": "Limited (poor network reported)"
+      }
+    },
+    {
+      "name": "Government Degree College, R.S. Pura",
+      "address": "R.S. Pura, Jammu, Jammu and Kashmir 181102",
+      "district": "Jammu",
+      "degree_programs": {
+        "undergraduate": ["B.A.", "B.Sc.", "B.Com."],
+        "postgraduate": []
+      },
+      "cut_offs_eligibility": "Merit-based via CUET; minimum 50% in Class 12",
+      "medium_of_instruction": "English",
+      "facilities": {
+        "hostel": false,
+        "labs": true,
+        "library": true,
+        "internet_access": true
+      }
+    },
+    {
+      "name": "Government Medical College, Jammu",
+      "address": "Maheshpura Chowk, Bakshi Nagar, Jammu, Jammu and Kashmir 180001",
+      "district": "Jammu",
+      "degree_programs": {
+        "undergraduate": ["MBBS"],
+        "postgraduate": ["MD", "MS"]
+      },
+      "cut_offs_eligibility": "NEET UG 2024: ~600 marks (General); Closing rank ~7561; NEET PG for MD/MS",
+      "medium_of_instruction": "English",
+      "facilities": {
+        "hostel": true,
+        "labs": true,
+        "library": true,
+        "internet_access": true
+      }
+    },
+    {
+      "name": "Government Degree College, Poonch",
+      "address": "Near Bus Stand, Haveli, Poonch, Jammu and Kashmir 185101",
+      "district": "Poonch",
+      "degree_programs": {
+        "undergraduate": ["B.A.", "B.Sc.", "B.Com."],
+        "postgraduate": []
+      },
+      "cut_offs_eligibility": "Merit-based via CUET; minimum 50% in Class 12",
+      "medium_of_instruction": "English",
+      "facilities": {
+        "hostel": true,
+        "labs": true,
+        "library": true,
+        "internet_access": true
+      }
+    },
+    {
+      "name": "Government College for Women, Parade Ground",
+      "address": "Parade Ground, Jammu, Jammu and Kashmir 180001",
+      "district": "Jammu",
+      "degree_programs": {
+        "undergraduate": ["B.A.", "B.Sc.", "B.Com."],
+        "postgraduate": []
+      },
+      "cut_offs_eligibility": "Merit-based via CUET; minimum 50% in Class 12",
+      "medium_of_instruction": "English",
+      "facilities": {
+        "hostel": true,
+        "labs": true,
+        "library": true,
+        "internet_access": true
+      }
+    },
+    {
+      "name": "Government Degree College, Baramulla",
+      "address": "Khawaja Bagh, Baramulla, Jammu and Kashmir 193101",
+      "district": "Baramulla",
+      "degree_programs": {
+        "undergraduate": ["B.A.", "B.Sc.", "B.Com."],
+        "postgraduate": []
+      },
+      "cut_offs_eligibility": "Merit-based via CUET; minimum 50% in Class 12",
+      "medium_of_instruction": "English",
+      "facilities": {
+        "hostel": true,
+        "labs": true,
+        "library": true,
+        "internet_access": true
+      }
+    },
+    {
+      "name": "Cluster University of Srinagar",
+      "address": "Gogji Bagh, Srinagar, Jammu and Kashmir 190008",
+      "district": "Srinagar",
+      "degree_programs": {
+        "undergraduate": ["B.A.", "B.Sc.", "B.Com.", "BBA", "Four-Year UG Programme (FYUGP)"],
+        "postgraduate": ["M.A.", "M.Sc.", "M.Com.", "MBA", "MCA"]
+      },
+      "cut_offs_eligibility": "Merit-based via CUET for UG; PG via entrance test; specific cut-offs vary annually",
+      "medium_of_instruction": "English",
+      "facilities": {
+        "hostel": true,
+        "labs": true,
+        "library": true,
+        "internet_access": true
+      }
+    },
+    {
+      "name": "Sri Pratap College",
+      "address": "M.A. Road, Srinagar, Jammu and Kashmir 190001",
+      "district": "Srinagar",
+      "degree_programs": {
+        "undergraduate": ["B.Sc. (Physics, Chemistry, Mathematics, Biology)"],
+        "postgraduate": []
+      },
+      "cut_offs_eligibility": "Merit-based via CUET; minimum 50% in Class 12",
+      "medium_of_instruction": "English",
+      "facilities": {
+        "hostel": true,
+        "labs": true,
+        "library": true,
+        "internet_access": true
+      }
+    },
+    {
+      "name": "Amar Singh College",
+      "address": "Gogji Bagh, Srinagar, Jammu and Kashmir 190008",
+      "district": "Srinagar",
+      "degree_programs": {
+        "undergraduate": ["B.A.", "B.Sc.", "B.Com."],
+        "postgraduate": []
+      },
+      "cut_offs_eligibility": "Merit-based via CUET; minimum 50% in Class 12",
+      "medium_of_instruction": "English",
+      "facilities": {
+        "hostel": true,
+        "labs": true,
+        "library": true,
+        "internet_access": true
+      }
+    },
+    {
+      "name": "Government College for Women, M.A. Road",
+      "address": "M.A. Road, Srinagar, Jammu and Kashmir 190001",
+      "district": "Srinagar",
+      "degree_programs": {
+        "undergraduate": ["B.A.", "B.Sc.", "B.Com."],
+        "postgraduate": []
+      },
+      "cut_offs_eligibility": "Merit-based via CUET; minimum 50% in Class 12",
+      "medium_of_instruction": "English",
+      "facilities": {
+        "hostel": true,
+        "labs": true,
+        "library": true,
+        "internet_access": true
+      }
+    },
+    {
+      "name": "University of Kashmir",
+      "address": "Hazratbal, Srinagar, Jammu and Kashmir 190006",
+      "district": "Srinagar",
+      "degree_programs": {
+        "undergraduate": ["B.A.", "B.Sc.", "B.Com.", "BBA", "B.A. LL.B.", "Four-Year UG Programme (FYUGP)"],
+        "postgraduate": ["M.A.", "M.Sc.", "M.Com.", "MBA", "MCA", "LL.M.", "Ph.D."]
+      },
+      "cut_offs_eligibility": "Merit-based via CUET for UG; PG via entrance test; specific cut-offs vary (e.g., MBA requires high merit)",
+      "medium_of_instruction": "English",
+      "facilities": {
+        "hostel": true,
+        "labs": true,
+        "library": true,
+        "internet_access": true
+      }
+    },
+    {
+      "name": "Government Medical College, Srinagar",
+      "address": "Karan Nagar, Srinagar, Jammu and Kashmir 190010",
+      "district": "Srinagar",
+      "degree_programs": {
+        "undergraduate": ["MBBS"],
+        "postgraduate": ["MD", "MS"]
+      },
+      "cut_offs_eligibility": "NEET UG 2024: ~600 marks (General); Closing rank ~8000; NEET PG for MD/MS",
+      "medium_of_instruction": "English",
+      "facilities": {
+        "hostel": true,
+        "labs": true,
+        "library": true,
+        "internet_access": true
+      }
+    },
+    {
+      "name": "Government Degree College, Anantnag",
+      "address": "Brakpora, Anantnag, Jammu and Kashmir 192101",
+      "district": "Anantnag",
+      "degree_programs": {
+        "undergraduate": ["B.A.", "B.Sc.", "B.Com."],
+        "postgraduate": []
+      },
+      "cut_offs_eligibility": "Merit-based via CUET; minimum 50% in Class 12",
+      "medium_of_instruction": "English",
+      "facilities": {
+        "hostel": true,
+        "labs": true,
+        "library": true,
+        "internet_access": true
+      }
+    },
+    {
+      "name": "Government Degree College, Sopore",
+      "address": "Sopore, Baramulla, Jammu and Kashmir 193201",
+      "district": "Baramulla",
+      "degree_programs": {
+        "undergraduate": ["B.A.", "B.Sc.", "B.Com."],
+        "postgraduate": []
+      },
+      "cut_offs_eligibility": "Merit-based via CUET; minimum 50% in Class 12",
+      "medium_of_instruction": "English",
+      "facilities": {
+        "hostel": true,
+        "labs": true,
+        "library": true,
+        "internet_access": true
+      }
+    },
+    {
+      "name": "Government Degree College, Kathua",
+      "address": "College Road, Kathua, Jammu and Kashmir 184104",
+      "district": "Kathua",
+      "degree_programs": {
+        "undergraduate": ["B.A.", "B.Sc.", "B.Com."],
+        "postgraduate": []
+      },
+      "cut_offs_eligibility": "Merit-based via CUET; minimum 50% in Class 12",
+      "medium_of_instruction": "English",
+      "facilities": {
+        "hostel": true,
+        "labs": true,
+        "library": true,
+        "internet_access": true
+      }
+    },
+    {
+      "name": "Government Degree College, Udhampur",
+      "address": "Gole Market, Udhampur, Jammu and Kashmir 182101",
+      "district": "Udhampur",
+      "degree_programs": {
+        "undergraduate": ["B.A.", "B.Sc.", "B.Com."],
+        "postgraduate": []
+      },
+      "cut_offs_eligibility": "Merit-based via CUET; minimum 50% in Class 12",
+      "medium_of_instruction": "English",
+      "facilities": {
+        "hostel": true,
+        "labs": true,
+        "library": true,
+        "internet_access": true
+      }
+    },
+    {
+      "name": "Government Degree College, Rajouri",
+      "address": "Kheora, Rajouri, Jammu and Kashmir 185131",
+      "district": "Rajouri",
+      "degree_programs": {
+        "undergraduate": ["B.A.", "B.Sc.", "B.Com."],
+        "postgraduate": []
+      },
+      "cut_offs_eligibility": "Merit-based via CUET; minimum 50% in Class 12",
+      "medium_of_instruction": "English",
+      "facilities": {
+        "hostel": true,
+        "labs": true,
+        "library": true,
+        "internet_access": true
+      }
+    },
+    {
+      "name": "Government Degree College, Doda",
+      "address": "Nagri, Doda, Jammu and Kashmir 182202",
+      "district": "Doda",
+      "degree_programs": {
+        "undergraduate": ["B.A.", "B.Sc.", "B.Com."],
+        "postgraduate": []
+      },
+      "cut_offs_eligibility": "Merit-based via CUET; minimum 50% in Class 12",
+      "medium_of_instruction": "English",
+      "facilities": {
+        "hostel": true,
+        "labs": true,
+        "library": true,
+        "internet_access": true
+      }
+    },
+    {
+      "name": "Government Degree College, Budgam",
+      "address": "Budgam, Jammu and Kashmir 191111",
+      "district": "Budgam",
+      "degree_programs": {
+        "undergraduate": ["B.A.", "B.Sc.", "B.Com."],
+        "postgraduate": []
+      },
+      "cut_offs_eligibility": "Merit-based via CUET; minimum 50% in Class 12",
+      "medium_of_instruction": "English",
+      "facilities": {
+        "hostel": true,
+        "labs": true,
+        "library": true,
+        "internet_access": true
+      }
+    }
+  ]
+}
